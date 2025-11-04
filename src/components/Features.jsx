@@ -1,67 +1,61 @@
 import React from "react";
 import { Clock, Shield, Wrench, TrendingUp } from "lucide-react";
 
-const features = [
-  {
-    icon: Clock,
-    title: "24/7 Availability",
-    description:
-      "Equipment ready when you need it, with flexible rental periods",
-  },
-  {
-    icon: Shield,
-    title: "Fully Insured",
-    description: "All equipment covered with comprehensive insurance",
-  },
-  {
-    icon: Wrench,
-    title: "Maintained Equipment",
-    description: "Regular servicing ensures peak performance",
-  },
-  {
-    icon: TrendingUp,
-    title: "Cost Effective",
-    description: "Competitive rates with no hidden fees",
-  },
-];
-
 const Features = () => {
-  return (
-    <section className="py-20 bg-[#1c1c1c]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-300 ">
-            Why Choose Us
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Industry-leading service and equipment for all your mining needs.
-          </p>
-        </div>
+    const items = [
+        {
+            icon: Clock,
+            title: "24/7 Equipment Support",
+            description: "Round-the-clock equipment availability and service assistance for urgent site needs.",
+        },
+        {
+            icon: Shield,
+            title: "Fully Maintained & Insured Fleet",
+            description: "All machines are serviced regularly and insured for safe and reliable operations.",
+        },
+        {
+            icon: Wrench,
+            title: "On-Site Technical Team",
+            description: "Trained operators and technicians available to support field operations when required.",
+        },
+        {
+            icon: TrendingUp,
+            title: "Best Price Guarantee",
+            description: "Competitive rental pricing with transparent terms and zero hidden fees.",
+        },
+    ];
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="p-6 bg-[#1c1c1c] border border-gray-400 rounded-xl shadow-sm 
-                         hover:shadow-md hover:border-orange-400 transform 
-                         hover:scale-105 transition-all duration-300 ease-out"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="mb-4 p-3 bg-[#f97a1f1a] rounded-lg w-fit">
-                <feature.icon className="h-6 w-6 text-orange-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-300">
-                {feature.title}
-              </h3>
-              <p className="text-gray-400">{feature.description}</p>
+
+    return (
+        <section className="py-24 bg-[#0e0e0e]" id="features">
+            <div className="container mx-auto px-6">
+                <div className="text-center mb-14">
+                    <h2 className="text-4xl font-extrabold text-white mb-3 tracking-wide">
+                        Why Choose Us
+                    </h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        Trusted heavy-equipment partner for mining, earthmoving, and industrial projects in Sierra Leone.
+                    </p>
+                </div>
+
+
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {items.map((item, i) => (
+                        <div
+                            key={i}
+                            className="p-7 bg-[#151515] border border-gray-700 rounded-xl shadow-lg hover:border-orange-500 hover:shadow-orange-600/20 transition-all duration-300 hover:-translate-y-1 group"
+                        >
+                            <div className="mb-4 p-3 rounded-lg bg-orange-600/15 w-fit group-hover:bg-orange-600/25 transition">
+                                <item.icon className="h-7 w-7 text-orange-500" />
+                            </div>
+                            <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                            <p className="text-gray-400 leading-relaxed text-sm">{item.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default Features;

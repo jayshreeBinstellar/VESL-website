@@ -47,7 +47,7 @@ export const ContactForm = () => {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-orange-100 rounded-lg">
+                <div className="p-3 bg-[#f97a1f1a] rounded-lg">
                   <Phone className="h-5 w-5 text-orange-600" />
                 </div>
                 <div>
@@ -60,7 +60,7 @@ export const ContactForm = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-orange-100 rounded-lg">
+                <div className="p-3 bg-[#f97a1f1a] rounded-lg">
                   <Mail className="h-5 w-5 text-orange-600" />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export const ContactForm = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-orange-100 rounded-lg">
+                <div className="p-3 bg-[#f97a1f1a] rounded-lg">
                   <MapPin className="h-5 w-5 text-orange-600" />
                 </div>
                 <div>
@@ -101,7 +101,7 @@ export const ContactForm = () => {
                   onChange={(e) => handleChange("name", e.target.value)}
                   placeholder="John Doe"
                   required
-                  className="w-full border border-gray-400 bg-[#0d0d0d] rounded-md p-3 focus:ring-2 focus:ring-orange-400 focus:outline-none"
+                  className="w-full border border-gray-400 bg-[#0d0d0d] rounded-md p-3 focus:ring-2 focus:ring-orange-400 focus:outline-none text-gray-100"
                 />
               </div>
 
@@ -118,7 +118,7 @@ export const ContactForm = () => {
                     onChange={(e) => handleChange("email", e.target.value)}
                     placeholder="john@company.com"
                     required
-                    className="w-full border border-gray-400 bg-[#0d0d0d] rounded-md p-3 focus:ring-2 focus:ring-orange-400 focus:outline-none"
+                    className="w-full border border-gray-400 bg-[#0d0d0d] rounded-md p-3 focus:ring-2 focus:ring-orange-400 focus:outline-none text-gray-100"
                   />
                 </div>
 
@@ -133,7 +133,7 @@ export const ContactForm = () => {
                     onChange={(e) => handleChange("phone", e.target.value)}
                     placeholder="+1 (555) 000-0000"
                     required
-                    className="w-full border border-gray-400 bg-[#0d0d0d] rounded-md p-3 focus:ring-2 focus:ring-orange-400 focus:outline-none"
+                    className="w-full border border-gray-400 bg-[#0d0d0d] rounded-md p-3 focus:ring-2 focus:ring-orange-400 focus:outline-none text-gray-100"
                   />
                 </div>
               </div>
@@ -188,14 +188,14 @@ export const ContactForm = () => {
                   onChange={(e) => handleChange("message", e.target.value)}
                   placeholder="Tell us about your project..."
                   rows={4}
-                  className="w-full border border-gray-400 bg-[#0d0d0d] rounded-md p-3 focus:ring-2 focus:ring-orange-400 focus:outline-none resize-none"
+                  className="w-full border border-gray-400 bg-[#0d0d0d] rounded-md p-3 focus:ring-2 focus:ring-orange-400 focus:outline-none resize-none text-gray-100"
                 ></textarea>
               </div>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-md flex items-center justify-center transition-all group"
+                className="w-full bg-orange-600 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-md flex items-center justify-center transition-all group"
               >
                 Submit Request
                 <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
