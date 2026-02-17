@@ -34,7 +34,7 @@ const SafetySection = () => {
     ];
 
     return (
-        <section className="py-24 bg-[#0a0a0a] relative overflow-hidden" id="safety">
+        <section className="py-10 md:py-15 lg:py-24 bg-[#0a0a0a] relative overflow-hidden" id="safety">
             {/* Background Decoration */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-[#f4783f]/5 -skew-x-12 transform origin-top translate-x-20" />
 

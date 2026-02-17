@@ -43,10 +43,10 @@ export const EquipmentShowcase = () => {
     const handleShowLess = () => setVisibleCount(4);
 
     return (
-        <section className="py-24 bg-[#0e0e0e]" id="equipment">
+        <section className="py-10 md:py-15 lg:py-24 bg-[#0e0e0e]" id="equipment">
             <div className="container mx-auto px-6">
                 {/* Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-10 md:mb-12 lg:mb-16">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ export const EquipmentShowcase = () => {
                 </div>
 
                 {/* Tabs */}
-                <div className="flex flex-wrap justify-center gap-3 mb-16">
+                <div className="flex flex-wrap justify-center gap-3 mb-10 md:mb-12 lg:mb-16">
                     {categories.map((cat) => (
                         <button
                             key={cat}
