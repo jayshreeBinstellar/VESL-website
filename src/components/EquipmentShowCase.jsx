@@ -28,13 +28,13 @@ const iconMap = {
 
 export const EquipmentShowcase = () => {
     const [visibleCount, setVisibleCount] = useState(4);
-    const [activeTab, setActiveTab] = useState("All");
+    // const [activeTab, setActiveTab] = useState("All");
 
-    const categories = ["All", ...new Set(equipment.map((item) => item.category))];
+    // const categories = ["All", ...new Set(equipment.map((item) => item.category))];
 
-    const filteredEquipment = activeTab === "All"
-        ? equipment
-        : equipment.filter((item) => item.category === activeTab);
+    // const filteredEquipment = activeTab === "All"
+    //     ? equipment
+    //     : equipment.filter((item) => item.category === activeTab);
 
     const handleViewMore = () => {
         setVisibleCount((prev) => prev + 4);
@@ -63,7 +63,7 @@ export const EquipmentShowcase = () => {
                 </div>
 
                 {/* Tabs */}
-                <div className="flex flex-wrap justify-center gap-3 mb-10 md:mb-12 lg:mb-16">
+                {/* <div className="flex flex-wrap justify-center gap-3 mb-10 md:mb-12 lg:mb-16">
                     {categories.map((cat) => (
                         <button
                             key={cat}
@@ -79,7 +79,7 @@ export const EquipmentShowcase = () => {
                             {cat.toUpperCase()}
                         </button>
                     ))}
-                </div>
+                </div> */}
 
                 {/* Cards Grid with AnimatePresence */}
                 <motion.div
@@ -87,7 +87,7 @@ export const EquipmentShowcase = () => {
                     className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto relative min-h-[500px]"
                 >
                     <AnimatePresence mode="popLayout">
-                        {filteredEquipment.slice(0, visibleCount).map((item, index) => {
+                        {equipment.slice(0, visibleCount).map((item, index) => {
                             const Icon = iconMap[item.icon] || Cog;
 
                             return (
@@ -136,7 +136,7 @@ export const EquipmentShowcase = () => {
                 {/* Bottom Buttons */}
                 <div className="text-center mt-16 flex justify-center min-h-[64px]">
                     <AnimatePresence mode="wait">
-                        {visibleCount < filteredEquipment.length ? (
+                        {visibleCount < equipment.length ? (
                             <motion.button
                                 key="view-more"
                                 initial={{ opacity: 0, y: 10 }}
@@ -147,7 +147,7 @@ export const EquipmentShowcase = () => {
                             >
                                 Explore Entire Fleet
                             </motion.button>
-                        ) : filteredEquipment.length > 4 ? (
+                        ) : equipment.length > 4 ? (
                             <motion.button
                                 key="show-less"
                                 initial={{ opacity: 0, y: 10 }}
