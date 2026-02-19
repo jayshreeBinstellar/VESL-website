@@ -137,9 +137,9 @@ export const ContactForm = () => {
                 <div>
                   <h3 className="font-semibold mb-1 text-white">Direct Calls</h3>
                   <div className="space-y-1">
-                    <p className="text-gray-400">+91 9586465642 <span className="text-xs text-gray-600">(India)</span></p>
-                    <p className="text-gray-400">+232 30094606 <span className="text-xs text-gray-600">(Sierra Leone)</span></p>
-                    <p className="text-gray-400">+232 75636333 <span className="text-xs text-gray-600">(Sierra Leone)</span></p>
+                    <p className="text-gray-400">+91 9586465642<span className="text-xs text-gray-600">(India)</span></p>
+                    <p className="text-gray-400">+232 80094606<span className="text-xs text-gray-600">(Sierra Leone)</span></p>
+                    <p className="text-gray-400">+232 75636333<span className="text-xs text-gray-600">(Sierra Leone)</span></p>
                   </div>
                   <p className="text-xs mt-2 text-gray-500 italic">Mon-Sat: 10am - 5pm</p>
                 </div>
