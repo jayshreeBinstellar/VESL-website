@@ -58,7 +58,7 @@ const Footer = () => {
                     <h3 className="font-semibold mb-4 text-orange-400 uppercase text-sm tracking-wide">Contact</h3>
                     <div className="space-y-2 text-sm">
                         <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> +91 9586465642 (India)</div>
-                        <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> +232 30094606</div>
+                        <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> +232 80094606</div>
                         <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> +232 75636333</div>
                         <div className="flex items-start gap-2"><Mail className="h-4 w-4 text-orange-500" /> vaibhavienterpriseslltd2022@gmail.com</div>
                         <div className="flex items-start gap-2 text-gray-400 leading-relaxed max-w-xs">
