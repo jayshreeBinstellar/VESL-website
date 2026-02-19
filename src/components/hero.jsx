@@ -88,10 +88,10 @@ const Hero = () => {
                         </button>
 
                         <a
-                            href="tel:+23230094606"
+                            href="tel:+23280094606"
                             className="group flex items-center bg-white/5 border border-white/10 backdrop-blur-md text-white font-bold px-10 py-4 rounded-xl hover:bg-white/10 transition-all"
                         >
-                            <Phone className="mr-3 h-5 w-5 text-orange-500" /> +232 30094606
+                            <Phone className="mr-3 h-5 w-5 text-orange-500" /> +232 80094606
                         </a>
                     </motion.div>
                 </motion.div>
