@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vaibhaventerpriserental.vercel.app/sitemap.xml
+Sitemap: https://vaibhavienterpriserental.vercel.app/sitemap.xml
