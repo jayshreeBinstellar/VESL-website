@@ -6,4 +6,19 @@
     <priority>1.00</priority>
   </url>
 
+  <url>
+    <loc>https://vaibhavienterpriserental.vercel.app/equipment</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vaibhavienterpriserental.vercel.app/features</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://vaibhavienterpriserental.vercel.app/contact</loc>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>
