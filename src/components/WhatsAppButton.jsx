@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
 
     const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${message}`;
 
-    // Detect screen size
+    // screen size
     useEffect(() => {
         const checkScreen = () => {
             setIsMobile(window.innerWidth < 768);
@@ -25,7 +25,7 @@ const WhatsAppButton = () => {
         return () => window.removeEventListener("resize", checkScreen);
     }, []);
 
-    // Hide tooltip after 10 seconds on mobile
+    // Hide tooltip after 5 seconds on mobile
     useEffect(() => {
         if (isMobile) {
             const timer = setTimeout(() => {
