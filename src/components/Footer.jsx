@@ -1,7 +1,7 @@
 // Enhanced UI components with Navbar & Footer
 // You can split these into files as needed
 import React from "react";
-import { Phone, Mail, Facebook, Instagram, MapPin } from "lucide-react";
+import { Phone, Mail, Facebook, Instagram, MapPin, Linkedin } from "lucide-react";
 import Logo from "../assets/logo.png";
 
 const Footer = () => {
@@ -60,10 +60,25 @@ const Footer = () => {
                         <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> +91 9586465642 (India)</div>
                         <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> +232 80094606</div>
                         <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-orange-500" /> +232 75636333</div>
-                        <div className="flex items-start gap-2"><Mail className="h-4 w-4 text-orange-500" /> vaibhavienterpriseslltd2022@gmail.com</div>
+                        <div className="flex items-start gap-2"><Mail className="h-4 w-4 text-orange-500" />  <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=vaibhavienterpriseslltd2022@gmail.com"
+                            className="hover:underline"
+                        >
+                            vaibhavienterpriseslltd2022@gmail.com
+                        </a></div>
                         <div className="flex items-start gap-2 text-gray-400 leading-relaxed max-w-xs">
-                            <span className="text-orange-500 text-lg"><MapPin className="h-5 w-5 text-orange-500" /></span>
-                            Tino's Drive, Magburka, Freetown, Sierra Leone, West Africa
+                            <span className="text-orange-500 text-lg">
+                                <MapPin className="h-5 w-5 text-orange-500" />
+                            </span>
+
+                            <a
+                                href="https://www.google.com/maps?q=8.486549, -13.236342"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                Tino's Drive, Magburka, Freetown, Sierra Leone, West Africa
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -74,14 +89,20 @@ const Footer = () => {
                     <h3 className="font-semibold mb-4 text-orange-400 uppercase text-sm tracking-wide">Follow Us</h3>
                     <div className="flex gap-5 text-xl">
                         <button type="button" aria-label="Facebook">
-                            <Facebook className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110" />
+                            <a href="https://www.facebook.com/vaibhavienterpriseslltd2022" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110">
+                                <Facebook className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110" />
+                            </a>
                         </button>
                         <button type="button" aria-label="Instagram">
-                            <Instagram className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110" />
+                            <a href="https://www.instagram.com/vaibhavienterpriseslltd2022" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110">
+                                <Instagram className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110" />
+                            </a>
                         </button>
-                        {/* <button type="button" aria-label="Linkedin">
-                            <Linkedin className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110" />
-                        </button> */}
+                        <button type="button" aria-label="Linkedin">
+                            <a href="https://in.linkedin.com/in/rajesh-halai-a554641b6" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110">
+                                <Linkedin className="cursor-pointer hover:text-orange-500 transition transform hover:scale-110" />
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
