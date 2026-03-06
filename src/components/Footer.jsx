@@ -72,7 +72,7 @@ const Footer = () => {
                             </span>
 
                             <a
-                                href="https://www.google.com/maps?q=8.486549, -13.236342"
+                                href="https://www.google.com/maps?q=8.7206592,-11.9573844"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:underline"

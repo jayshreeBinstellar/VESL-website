@@ -125,7 +125,6 @@ export const EquipmentShowcase = () => {
                                         <p className="text-base text-gray-400 leading-relaxed font-medium">{item.specs}</p>
                                     </div>
 
-                                    {/* Subtle hover effect light */}
                                     <div className="absolute inset-x-0 bottom-0 h-1 bg-[#f4783f] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
                                 </motion.div>
                             );
@@ -155,7 +154,7 @@ export const EquipmentShowcase = () => {
                                 exit={{ opacity: 0, y: -10 }}
                                 onClick={() => {
                                     handleShowLess();
-                                    // Smooth scroll back to section top so user isn't lost
+                                    // scroll back to top of equipment section after collapsing
                                     document.getElementById("equipment")?.scrollIntoView({ behavior: "smooth" });
                                 }}
                                 className="px-10 py-4 border border-gray-800 text-gray-400 font-black rounded-xl hover:bg-[#1a1a1a] hover:text-white transition-all duration-300 uppercase tracking-widest text-sm"
